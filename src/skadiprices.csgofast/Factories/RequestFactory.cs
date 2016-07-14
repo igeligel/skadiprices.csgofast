@@ -4,9 +4,9 @@ using System.Net.Http;
 
 namespace skadiprices.csgofast.Factories
 {
-    public class RequestFactory
+    internal class RequestFactory
     {
-        public static HttpResponseMessage Create()
+        internal static HttpResponseMessage Create()
         {
             HttpResponseMessage response;
             var handler = new HttpClientHandler();
