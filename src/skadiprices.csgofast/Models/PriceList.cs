@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using skadiprices.csgofast.Interfaces;
 
 namespace skadiprices.csgofast.Models
 {
-    public class PriceList
+    public class PriceList: ISkadiPriceList
     {
-        public List<CsGoFastItem> Items { get; set; }
+        public List<ISkadiPriceItem> Items { get; set; }
     }
 }

@@ -1,11 +1,11 @@
 using skadiprices.csgofast.Factories;
-using skadiprices.csgofast.Models;
+using skadiprices.csgofast.Interfaces;
 
 namespace skadiprices.csgofast
 {
-    public class SkadiCsGoFast
+    public static class SkadiCsGoFast
     {
-        public static PriceList GetPrices()
+        public static ISkadiPriceList GetPrices()
         {
             return PriceListFactory.Create();
         }

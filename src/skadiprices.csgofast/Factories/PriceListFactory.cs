@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using skadiprices.csgofast.Models;
 using skadiprices.csgofast.Models.Json;
 using System.Collections.Generic;
+using skadiprices.csgofast.Interfaces;
 
 namespace skadiprices.csgofast.Factories
 {
@@ -19,7 +20,7 @@ namespace skadiprices.csgofast.Factories
             CsGoFastRoot csGoFastRoot)
         {
             var priceList = new PriceList();
-            priceList.Items = new List<CsGoFastItem>();
+            priceList.Items = new List<ISkadiPriceItem>();
             foreach (KeyValuePair<string, decimal> entry in csGoFastRoot.Prices)
             {
                 priceList.Items.Add(new CsGoFastItem
