@@ -41,7 +41,6 @@ namespace skadiprices.csgofast.Factories
                     HttpHeaderKeys.UserAgent, HttpHeaderValues.UserAgent);
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
                     HttpHeaderKeys.Origin, HttpHeaderValues.ChromeExtension);
-
                 client.DefaultRequestHeaders.Host = Uris.CsGoFastSecured.Host;
                 response = client.GetAsync(CsGoFastPaths.AllPrices).Result;
             }

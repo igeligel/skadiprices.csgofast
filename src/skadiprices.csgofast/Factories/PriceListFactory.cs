@@ -39,7 +39,7 @@ namespace skadiprices.csgofast.Factories
         /// An implemented instance of the interface. 
         /// For more information lookup: <see cref="ISkadiPriceList"/>.
         /// </returns>
-        private static ISkadiPriceList ConvertCsGoFastRootToPriceList(
+        internal static ISkadiPriceList ConvertCsGoFastRootToPriceList(
             CsGoFastRoot csGoFastRoot)
         {
             var priceList = new PriceList();
