@@ -1,11 +1,24 @@
+using skadiprices.csgofast.Constants;
 using System;
 using System.Net;
 using System.Net.Http;
 
 namespace skadiprices.csgofast.Factories
 {
+    /// <summary>
+    /// Request factory which is used to create HTTP Requests.
+    /// This class should provide an easy access to do HTTP Requests
+    /// regarding the csgofast.com pricing api.
+    /// </summary>
     internal class RequestFactory
     {
+        /// <summary>
+        /// Method to create a HTTP Request. This takes no parameters
+        /// because there is just one request done to the api.
+        /// </summary>
+        /// <returns>
+        /// The response of the request as HttpResponseMessage.
+        /// </returns>
         internal static HttpResponseMessage Create()
         {
             HttpResponseMessage response;
@@ -14,26 +27,24 @@ namespace skadiprices.csgofast.Factories
                                              DecompressionMethods.GZip;
             using (var client = new HttpClient(handler))
             {
-                client.BaseAddress = new Uri("https://api.csgofast.com");
+                client.BaseAddress = Uris.CsGoFastSecured;
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
-                    "If-None-Match", "W/\"48d5d-chU1klyIsYVi6Sb4TG6VwA\"");
+                    HttpHeaderKeys.IfNoneMatch, HttpHeaderValues.IfNoneMatched);
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
-                    "Accept", "*/*");
+                    HttpHeaderKeys.Accept, HttpHeaderValues.AcceptAll);
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
-                    "Accept-Encoding", "gzip, deflate, sdch, br");
+                    HttpHeaderKeys.AcceptEncoding,
+                    HttpHeaderValues.GzipDeflateSdchBr);
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
-                    "Accept-Language",
-                    "de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4,it;q=0.2");
+                    HttpHeaderKeys.AcceptLanguage,
+                    HttpHeaderValues.AcceptLanguage);
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
-                    "User-Agent",
-                    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36");
+                    HttpHeaderKeys.UserAgent, HttpHeaderValues.UserAgent);
                 client.DefaultRequestHeaders.TryAddWithoutValidation(
-                    "Origin",
-                    "chrome-extension://hddhnchjldeohpcnmagkajhjonnooneo");
+                    HttpHeaderKeys.Origin, HttpHeaderValues.ChromeExtension);
 
-                client.DefaultRequestHeaders.Host =
-                    new Uri("https://api.csgofast.com").Host;
-                response = client.GetAsync("/sih/all").Result;
+                client.DefaultRequestHeaders.Host = Uris.CsGoFastSecured.Host;
+                response = client.GetAsync(CsGoFastPaths.AllPrices).Result;
             }
             return response;
         }
