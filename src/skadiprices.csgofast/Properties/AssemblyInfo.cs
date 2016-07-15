@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -17,3 +17,5 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("645efafc-6d69-4af9-ae5d-5cdd0a6edaf2")]
+
+[assembly: InternalsVisibleTo("skadiprices.csgofast.test")]
