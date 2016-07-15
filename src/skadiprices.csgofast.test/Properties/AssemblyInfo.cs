@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("skadiprices.csgofast")]
+[assembly: AssemblyProduct("skadiprices.csgofast.test")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,6 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("645efafc-6d69-4af9-ae5d-5cdd0a6edaf2")]
-
-[assembly: InternalsVisibleTo("skadiprices.csgofast.test")]
+[assembly: Guid("44e08c66-9a87-47c7-94aa-7971b9cef18a")]
