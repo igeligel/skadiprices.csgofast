@@ -8,7 +8,7 @@ If you join the discord, message igeligel.
 |               | Build Status  | 
 | ------------- |:-------------:| 
 | Linux/Mac     | WIP           | 
-| Windows       | WIP           |
+| Windows       | [![Build status](https://ci.appveyor.com/api/projects/status/37o4mjjhds93tgha?svg=true)](https://ci.appveyor.com/project/igeligel/skadiprices-csgofast) |
 
 .net core package to interact with the [csgofast.com pricing api](https://api.csgofast.com/sih/all).
 
