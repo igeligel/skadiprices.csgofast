@@ -1,5 +1,19 @@
 {
   "version": "0.1.0",
+  "title": "skadiprices.csgofast",
+  "description": ".net core package to interact with the csgofast.com pricing api.",
+  "language": "en-US",
+  "authors": [ "Kevin Peters" ],
+  "packOptions": {
+    "projectUrl": "https://github.com/igeligel/skadiprices.csgofast",
+    "tags": [ "steam", "prices", "csgo", "core", "skadi", "price", "skins" ],
+    "licenseUrl": "https://github.com/igeligel/skadiprices.csgofast/blob/master/LICENSE",
+    "iconUrl": "https://i.imgur.com/Jpd2xBl.png",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/igeligel/skadiprices.csgofast"
+    }
+  },
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",

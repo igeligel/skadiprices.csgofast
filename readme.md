@@ -1,6 +1,6 @@
 # skadiprices.csgofast
 
-[![NuGet](https://img.shields.io/nuget/v/skadisteam.login.svg)](https://www.nuget.org/packages/skadisteam.login/)
+[![NuGet](https://img.shields.io/nuget/v/skadiprices.csgofast.svg)](https://www.nuget.org/packages/skadiprices.csgofast/0.1.0)
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/0i5X3oDHJbDUsiGC)
 
 If you join the discord, message igeligel.
