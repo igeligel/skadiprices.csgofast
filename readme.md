@@ -7,8 +7,8 @@ If you join the discord, message igeligel.
 
 |               | Build Status  | 
 | ------------- |:-------------:| 
-| Linux/Mac     | WIP | 
-| Windows       | WIP |
+| Linux/Mac     | WIP           | 
+| Windows       | WIP           |
 
 .net core package to interact with the [csgofast.com pricing api](https://api.csgofast.com/sih/all).
 
@@ -16,12 +16,20 @@ If you join the discord, message igeligel.
 An api wrapper around the csgofast.com pricing api.
 It will enable you to read prices easily out of the csgofast api.
 
+## Dependencies
+
+| Package             | Version     | 
+| ------------------- |-------------| 
+| NETStandard.Library | 1.6.0       |
+| Newtonsoft.Json     | 9.0.1       |
+
 ## Installation
 
-You can use it as a nuget package. Just use it as reference in your project.json file.
+### As Nuget Package (Recommended)
 
-Otherwise, you can build the project by yourself and reference the build like this:
+> WIP
 
+### Referenced as built package
 1. You need to install .net core. For instructions head over [here](https://www.microsoft.com/net/core).
 2. Open your command line.
 3. Change directory to the package's source.
@@ -42,14 +50,12 @@ Otherwise, you can build the project by yourself and reference the build like th
    in your project.json file. For an example watch the [testing package](https://github.com/igeligel/skadiprices.csgofast/tree/master/src/skadiprices.csgofast.test).
 
 ## Documentation
-
 The documentation is referenced here:
 
 [Click me](https://github.com/igeligel/skadiprices.csgofast/blob/master/documentation/public.md) to get to the documentation
 
 
 ## Contribute
-
 Watch the [master repository](https://github.com/igeligel/skadisteam) for more information.
 
 ## Authors
