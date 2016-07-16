@@ -45,7 +45,7 @@ Otherwise, you can build the project by yourself and reference the build like th
 
 The documentation is referenced here:
 
-> WIP
+[Click me](https://github.com/igeligel/skadiprices.csgofast/blob/master/documentation/public.md) to get to the documentation
 
 
 ## Contribute
