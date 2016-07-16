@@ -5,7 +5,7 @@
 *Summary*
 > Class to contact the csgofast pricing api.
 
-- public static ISkadiPriceList GetPrices()
+- [public static ISkadiPriceList GetPrices()](#public-static-iskadipricelist-getprices)
 
 ---------------------------------
 
@@ -17,7 +17,7 @@
 *Returns*
 > A list of items which contains the markethashname.
 >
->  For further reference lookup: ISkadiPriceList.
+>  For further reference lookup: [ISkadiPriceList](https://github.com/igeligel/skadiprices.csgofast/blob/master/src/skadiprices.csgofast/Interfaces/ISkadiPriceList.cs).
 
 *Example*
 ```csharp
