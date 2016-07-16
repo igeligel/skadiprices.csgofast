@@ -16,6 +16,9 @@ namespace skadiprices.csgofast
         /// and the prices as decimal.
         /// For further reference lookup: <see cref="ISkadiPriceList"/>.
         /// </returns>
+        /// <example>
+        /// var prices = SkadiCsGoFast.GetPrices();
+        /// </example>
         public static ISkadiPriceList GetPrices()
         {
             return PriceListFactory.Create();
