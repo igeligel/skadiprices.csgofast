@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>.net core package to interact with the csgofast.com pricing api.</Description>
+    <AssemblyTitle>skadiprices.csgofast</AssemblyTitle>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Authors>Kevin Peters</Authors>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <AssemblyName>skadiprices.csgofast</AssemblyName>
+    <PackageId>skadiprices.csgofast</PackageId>
+    <PackageTags>steam;prices;csgo;core;skadi;price;skins</PackageTags>
+    <PackageIconUrl>https://i.imgur.com/Jpd2xBl.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/igeligel/skadiprices.csgofast</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/igeligel/skadiprices.csgofast/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/igeligel/skadiprices.csgofast</RepositoryUrl>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+  </ItemGroup>
+
+</Project>
